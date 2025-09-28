@@ -46,7 +46,7 @@ cd VLSI
 ```
 git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ```
-<img width="1024" height="418" alt="Gitclone skyrtl" src="https://github.com/user-attachments/assets/0d9a7fb4-8ff7-45db-b167-33b805390e8b" />
+<img width="1859" height="296" alt="Git Clone" src="https://github.com/user-attachments/assets/757dd339-50d2-4a55-b09a-5ab9af333140" />
 
 ```
 iverilog good_mux.v tb_good_mux.v
@@ -55,14 +55,15 @@ Running the a.out file created
 ```
 ./a.out
 ```
-<img width="792" height="72" alt="Running the a out file" src="https://github.com/user-attachments/assets/01b01d47-eb00-4d38-9323-d2d318f88f64" />
 
 ```
 gtkwave tb_good_mux.vcd
 ```
 The test bench instantiates the DUT to connect with it
 Got a GTK Wave
-<img width="1853" height="573" alt="GTKWave tb_good_mux" src="https://github.com/user-attachments/assets/a74b0422-473b-47ea-944c-fefeaaad1b86" />
+
+<img width="1852" height="572" alt="gtkwave good_mux" src="https://github.com/user-attachments/assets/4d3dfcd2-36cb-431c-b675-88d0f4c2c6d8" />
+
 
 # 4. Introduction to Yosys & Logic Synthesis
 Here comes the transformative phase: Logic Synthesis using Yosys! We'll witness how behavioral hardware descriptions undergo automatic conversion into optimized gate-level implementations—the fundamental building blocks of integrated circuits. This represents the critical transformation stage that bridges conceptual designs with physical silicon, whether targeting FPGA prototypes or ASIC manufacturing flows. Comprehending this automated translation process forms the bedrock of modern digital engineering, enabling the journey from abstract concepts to fabricated chips.
@@ -84,17 +85,19 @@ read_verilog good_mux.v
 synth -top good_mux
 ```
 We are reading the liberty file, verilog code of MUX & also synthesizng the RTL Code/Design
-<img width="1865" height="1080" alt="Screenshot from 2025-09-27 17-15-04" src="https://github.com/user-attachments/assets/b84ec61d-c3b4-4599-8941-c33f42dea2e0" />
-<img width="635" height="406" alt="Screenshot from 2025-09-27 17-17-55" src="https://github.com/user-attachments/assets/02f359e7-7986-4277-b8f4-ca80e98ac4bc" />
+<img width="1857" height="1040" alt="Screenshot from 2025-09-28 11-02-05" src="https://github.com/user-attachments/assets/30dd5ba2-8d9d-4d20-85f9-4270d328bc1a" />
+
+
 
 Now we will do the technology mapping
 ```
 abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
-<img width="845" height="273" alt="Screenshot from 2025-09-27 17-19-51" src="https://github.com/user-attachments/assets/8ba635f0-9c63-4b54-b95f-74872cbad1f8" />
+
 
 Got a distutils error
-<img width="1865" height="449" alt="Distutils Error" src="https://github.com/user-attachments/assets/b91707f2-ba39-49d3-ab4c-2507e1c4247a" />
+
+
 
 ## To rectify the error
 ```
@@ -110,11 +113,12 @@ Now to show the gate level circuit
 ```
 show
 ```
-<img width="1856" height="1007" alt="Screenshot from 2025-09-27 17-20-41" src="https://github.com/user-attachments/assets/348a3cc6-ebd4-456b-90bb-c9192db0be9b" />
+<img width="1857" height="858" alt="Screenshot from 2025-09-28 11-02-51" src="https://github.com/user-attachments/assets/38621c54-67dc-4825-8c03-4c519dd44b9d" />
+
+
 
 Getting the netlist
 ```
 write_verilog -noattr good_mux_netlist.v
 !gvim good_mux_netlist.v
 ```
-<img width="1251" height="604" alt="Netlist File" src="https://github.com/user-attachments/assets/199b7e4e-7ffb-4f9f-976c-ed3700c4d662" />
