@@ -95,16 +95,20 @@ endmodule
 We used the function : y = i1 if sel = 1; else y = i0.
 
 #### Simulated the rtl_design of ternary_operator_mux.v and got waveforms in the gtkwave :
-<img width="1854" height="573" alt="GTKWave Ternary_Operator" src="https://github.com/user-attachments/assets/ef33b725-b6da-4fa2-b6df-e300f447929c" />
+<img width="1851" height="577" alt="Screenshot from 2025-09-28 15-16-50" src="https://github.com/user-attachments/assets/6b581c7a-b529-4195-9ef7-42344d3a0830" />
+
 
 #### Synthesizing in Yosys
-<img width="1854" height="871" alt="Show ternary operator mux" src="https://github.com/user-attachments/assets/b1b1896c-684f-4f78-bcff-31877139f4d6" />
+<img width="1851" height="879" alt="Screenshot from 2025-09-28 15-13-00" src="https://github.com/user-attachments/assets/3795ce94-f62d-4783-867f-6fcc0762759f" />
+
 
 #### Creating a Netlist for GLS:
-<img width="1846" height="585" alt="Netlist ternary_operator_mux" src="https://github.com/user-attachments/assets/d01f90db-6b8c-4cab-ac7f-c31cd71397dc" />
+<img width="1846" height="585" alt="ternary_operator_mux_netlist" src="https://github.com/user-attachments/assets/29dc2d0f-f0a8-422c-8ef9-56bd467d40c6" />
+
 
 #### Synthesis after GLS
-<img width="1846" height="882" alt="GLS Ternary_Operator_MUX" src="https://github.com/user-attachments/assets/40ed52d5-eb65-4f3b-9454-985233ccda0f" />
+<img width="1846" height="882" alt="ternary_operator_mux show after GLS" src="https://github.com/user-attachments/assets/b5ae7fbc-66d3-4e20-9939-864c9cb62197" />
+
 
 #### Bad MUX Example (Common Pitfalls)
 Let's take a code with mistakes
@@ -134,12 +138,14 @@ end
 ```
 
 #### Simulation of bad_mux :
-<img width="1846" height="573" alt="bad_mux GTKWave" src="https://github.com/user-attachments/assets/53ea8a58-3fd2-4bfa-bf37-cdaa72d592f5" />
+<img width="1851" height="574" alt="Screenshot from 2025-09-28 15-36-45" src="https://github.com/user-attachments/assets/94f7a0c7-0cee-43d9-bf27-6a306797ce43" />
+
 
 ##### Performing GLS for bad_mux :
+<img width="1851" height="870" alt="Screenshot from 2025-09-28 15-37-54" src="https://github.com/user-attachments/assets/bd9c01dc-02f8-485e-80e7-0660a13da166" />
 
-<img width="1846" height="868" alt="GLS Bad_MUX" src="https://github.com/user-attachments/assets/429e8a91-8652-46c8-b8ea-5718175e2798" />
-<img width="1846" height="587" alt="bad_mux netlist" src="https://github.com/user-attachments/assets/a8c50c53-cc36-49bf-8509-9844fd991c71" />
+<img width="1846" height="587" alt="bad_mux_netlist" src="https://github.com/user-attachments/assets/c41dbdd1-cf92-4a57-aa48-85f33bafb026" />
+
 
 #### Blocking Assignment Caveat
 
@@ -167,7 +173,7 @@ always @ (*) begin
 end
 ```
 ##### Simulation of blocking_caveat :
-<img width="1854" height="589" alt="Blocking Caevat GTKWave" src="https://github.com/user-attachments/assets/a8e4c067-c181-4250-b9b6-1621297aaa0a" />
+<img width="1851" height="574" alt="Screenshot from 2025-09-28 15-36-45" src="https://github.com/user-attachments/assets/8e28ac29-3db5-4fd9-9a3d-038e776b26d8" />
 
 #### Synthesis of blocking_caveat :
-<img width="1854" height="883" alt="Blocking Caevat Show" src="https://github.com/user-attachments/assets/b25e287b-8f56-4766-b030-82e754f4783a" />
+<img width="1851" height="878" alt="Screenshot from 2025-09-28 15-33-36" src="https://github.com/user-attachments/assets/ea91b84b-b5d2-42c9-9809-094f3258546f" />
