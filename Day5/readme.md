@@ -116,12 +116,13 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1854" height="595" alt="GTKWave incomp_case" src=" " />
+<img width="1851" height="572" alt="1" src="https://github.com/user-attachments/assets/7216aaa8-4103-4a60-b009-27c1f0c9badd" />
 
 
 ### Lab 2: Synthesis Analysis of Incomplete Logic
 
-<img width="1854" height="459" alt="Show Incomp_case" src=" " />
+<img width="1851" height="1007" alt="2" src="https://github.com/user-attachments/assets/405279ce-fc3d-4e72-93aa-9abe23d25134" />
+
 
 
 ### Lab 3: Cascaded Conditional Structures
@@ -136,10 +137,12 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1854" height="598" alt="GTKWave incomp_if2" src=" " />
+<img width="1851" height="594" alt="3" src="https://github.com/user-attachments/assets/d661021d-e1af-4345-8122-b95923216e0a" />
 
 ### Lab 4: Synthesis Analysis of Cascaded Logic
-<img width="1854" height="550" alt="Show incomp_if2" src=" " />
+
+<img width="1851" height="842" alt="4" src="https://github.com/user-attachments/assets/319b996c-3af1-46b9-9fd6-9e2b3baeeba7" />
+
 
 
 ### Lab 5: Comprehensive Selection Statement Implementation
@@ -155,11 +158,14 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1854" height="598" alt="GTKWave comp_case" src=" " />
+
+<img width="1851" height="595" alt="5" src="https://github.com/user-attachments/assets/eddbbc85-bb90-4b9b-8cb4-0e3a1bf470bb" />
+
 
 
 ### Lab 6: Synthesis Analysis of Complete Selection Logic
-<img width="1854" height="490" alt="Show comp_case" src=" " />
+<img width="1851" height="760" alt="6" src="https://github.com/user-attachments/assets/658715cf-fa95-4be6-8a47-13eb6f1ff964" />
+
 
 
 ### Lab 7: Incomplete Selection Statement Handling
@@ -180,9 +186,8 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1854" height="615" alt="GTKWave bad_case" src=" " />
-
-<img width="1854" height="974" alt="Show bad_case" src=" " />
+<img width="1851" height="1026" alt="8" src="https://github.com/user-attachments/assets/69fe1252-84c2-4e51-a284-708e91938a7c" />
+<img width="1851" height="665" alt="7" src="https://github.com/user-attachments/assets/87917503-9b42-4c05-87d6-6c270102cd31" />
 
 ### Lab 8: Partial Signal Assignment in Selection Constructs
 
@@ -207,8 +212,9 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1861" height="876" alt="Show partial_case_assign" src=" " />
-<img width="1861" height="611" alt="GTKWave partial_case_assign" src=" " />
+
+<img width="1861" height="611" alt="10" src="https://github.com/user-attachments/assets/da0d47a8-f1cf-4110-bdfe-6a2629ac7ed4" />
+<img width="1851" height="1026" alt="9" src="https://github.com/user-attachments/assets/7ee1223f-ccfe-4559-8e90-b182a17569f4" />
 
 
 ## 4. Iterative Construction Mechanisms in Hardware Description
@@ -283,8 +289,8 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1847" height="1061" alt="Show 4x1 MUX" src=" " />
-<img width="1847" height="666" alt="GTKWave Mux Gen" src=" " />
+<img width="1851" height="1060" alt="12" src="https://github.com/user-attachments/assets/e114ea93-cb90-492a-9ce2-57aed8b36143" />
+<img width="1851" height="667" alt="11" src="https://github.com/user-attachments/assets/b5179847-d18f-44c7-afda-616cf7d78152" />
 
 
 ### Lab 10: 8-Output Distribution Circuit Using Selection Logic
@@ -313,8 +319,9 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="952" height="1076" alt="Show_Demux_Case" src=" " />
-<img width="1846" height="745" alt="GTKWave Demux_Case" src=" " />
+<img width="1017" height="1074" alt="14" src="https://github.com/user-attachments/assets/feee9abf-4a65-49cf-9cf9-74fcc062ef6c" />
+<img width="1851" height="761" alt="13" src="https://github.com/user-attachments/assets/f52e566e-3f58-4647-8be4-441c3e64e884" />
+
 
 
 ### Lab 11: 8-Output Distribution Circuit Using Iterative Construction
@@ -338,9 +345,8 @@ always @(*) begin
 end
 endmodule
 ```
-<img width="1023" height="1079" alt="Show 1x8 Demux" src=" " />
-<img width="1847" height="760" alt="GTKWave Demux Gen" src=" " />
-
+<img width="1846" height="1073" alt="16" src="https://github.com/user-attachments/assets/515a169b-97e0-4abe-bce9-a083d8dc7718" />
+<img width="1846" height="761" alt="15" src="https://github.com/user-attachments/assets/63421e99-abbb-4c24-8244-0b72b4778182" />
 
 
 ### Lab 12: 8-Bit Propagated Addition Circuit with Generation Framework
@@ -373,4 +379,5 @@ module fa (input a, input b, input c, output co, output sum);
     assign {co, sum} = a + b + c;
 endmodule
 ```
-<img width="1300" height="736" alt="rca v GTKWave" src=" " />
+<img width="1300" height="736" alt="rca v gtkwave" src="https://github.com/user-attachments/assets/4c6705b3-fb8e-401f-87cb-032b0864cc3f" />
+
