@@ -37,10 +37,8 @@ The comprehensive evaluation of our hierarchical design structure (multiple_modu
 3. Exhaustive netlist documentation generation, implementing automated visualization workflows to capture detailed circuit topologies for every constituent module within the design hierarchy!
 
 #### Sub module :
-<img width="1856" height="542" alt="Show Sub_module1" src="https://github.com/user-attachments/assets/726dbbee-5051-4793-8d56-c3bb79d228ad" />
+<img width="1857" height="799" alt="Sub module" src="https://github.com/user-attachments/assets/29332c4a-da72-4217-85a9-78ee3942ff79" />
 
-#### Multiple Modules:
-<img width="1854" height="785" alt="Multiple Modules" src="https://github.com/user-attachments/assets/7da1f63c-53b6-49dc-b42b-d77b9fb4ae58" />
 
 ```
 read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -58,7 +56,7 @@ write_verilog multiple_modules_flat.v
 ```
 show
 ```
-<img width="1853" height="452" alt="Flattten Show Output" src="https://github.com/user-attachments/assets/9fb2be9b-9ae7-45c5-b0d3-6b3c5b30dcef" />
+<img width="1857" height="730" alt="multiple modules" src="https://github.com/user-attachments/assets/1d476989-60d2-47ec-b880-ebad29e4c587" />
 
 
 ### 3. Sequential Element Architectures and Performance Optimization
@@ -79,7 +77,9 @@ Now open the dumped/created vcd file in gtkwave
 ```
 gtkwave tb_dff_asyncres.vcd
 ```
-<img width="1856" height="562" alt="GTKWave for Asyncres" src="https://github.com/user-attachments/assets/6e03d09a-c365-406e-b59f-3b6f64a7f815" />
+<img width="1857" height="568" alt="1" src="https://github.com/user-attachments/assets/e9d099f3-b9d3-441d-bb5f-2ba74e286832" />
+
+
 ```
 iverilog dff_syncres.v tb_dff_syncres.v
 ./a.out
@@ -88,7 +88,8 @@ Now open the dumped/created vcd file in gtkwave
 ```
 gtkwave tb_dff_syncres.vcd
 ```
-<img width="1856" height="606" alt="GTK Wave dff_syncres" src="https://github.com/user-attachments/assets/6de35c04-b5fe-447c-835b-0ecf9c9dfe42" />
+
+<img width="1857" height="594" alt="2" src="https://github.com/user-attachments/assets/544e499e-5813-4d78-858b-2e89a38e117d" />
 
 ```
 iverilog dff_asyncres_set.v tb_dff_asyncres_set.v
@@ -98,7 +99,7 @@ Now open the dumped/created vcd file in gtkwave
 ```
 gtkwave tb_dff_asyncres_set.vcd
 ```
-<img width="1859" height="575" alt="asyncres_set GTKWave" src="https://github.com/user-attachments/assets/7d2c7714-fe46-4375-8207-53f1649aa495" />
+<img width="1857" height="567" alt="3" src="https://github.com/user-attachments/assets/1cc17729-69f0-4b8c-9e2d-a4f442ee07de" />
 
 
 #### Synthesizing asyncres file in Yosys
@@ -122,7 +123,10 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 show
 ```
-<img width="1856" height="425" alt="Show asyncres" src="https://github.com/user-attachments/assets/fa6bce6b-10d0-4eba-b33c-3d7949a37b14" />
+
+
+<img width="1857" height="430" alt="Screenshot from 2025-09-28 11-26-33" src="https://github.com/user-attachments/assets/6b7f9343-6b0b-4403-8992-2a5712018414" />
+
 
 #### Synthesizing syncres file in Yosys
 ```
@@ -144,7 +148,9 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 show
 ```
-<img width="1859" height="468" alt="Show Syncres" src="https://github.com/user-attachments/assets/166f40fe-08d8-47e5-bb8a-ec30889ab2b8" />
+
+<img width="1857" height="430" alt="Screenshot from 2025-09-28 11-26-33" src="https://github.com/user-attachments/assets/cfb03984-a748-4094-9197-47a47ccc3546" />
+
 
 #### Synthesizing async_set file
 
@@ -164,7 +170,9 @@ abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 ```
 show
 ```
-<img width="1851" height="611" alt="Show asyncres_set" src="https://github.com/user-attachments/assets/e01a164e-458a-4d37-a205-cb433e830f41" />
+
+<img width="1857" height="412" alt="Screenshot from 2025-09-28 11-28-17" src="https://github.com/user-attachments/assets/cb326ed4-6e93-4d9b-a012-97e3e90d4980" />
+
 
 ### Optimizations.
 ```
@@ -188,7 +196,8 @@ Not needed as there is nothing to map
 ```
 show
 ```
-<img width="525" height="261" alt="Show mul2" src="https://github.com/user-attachments/assets/26e8452c-c66a-48dc-83bf-8510508bf116" />
+
+<img width="1857" height="821" alt="Screenshot from 2025-09-28 11-30-02" src="https://github.com/user-attachments/assets/e283fedb-6a91-4617-b55d-ab5fc0d78f10" />
 
 Writng the netlist
 ```
@@ -197,7 +206,8 @@ write_verilog -noattr mul2_net.v
 ```
 !gvim mul2_net.v
 ```
-<img width="1236" height="301" alt="Netlist mul2" src="https://github.com/user-attachments/assets/6bd9e644-f412-4958-8bac-96b759325640" />
+
+<img width="1236" height="301" alt="mul2 netlist" src="https://github.com/user-attachments/assets/a55952a5-48bc-4760-a548-18333555e342" />
 
 
 ##### 2. 
@@ -214,7 +224,9 @@ Not needed as there is nothing to map
 ```
 show
 ```
-<img width="548" height="258" alt="show mult8" src="https://github.com/user-attachments/assets/6ca85373-8eb9-4adb-a2e4-a7a6ef8c8472" />
+
+<img width="1857" height="821" alt="Screenshot from 2025-09-28 11-33-13" src="https://github.com/user-attachments/assets/d8aa2a50-5400-41f9-9339-fe7a5781e34b" />
+
 
 Writng the netlist
 ```
@@ -223,4 +235,4 @@ write_verilog -noattr mult8_net.v
 ```
 !gvim mult8_net.v
 ```
-<img width="1250" height="322" alt="gvim mult8" src="https://github.com/user-attachments/assets/76034497-a39b-4d4e-bf4c-d9e77d6a76f1" />
+<img width="1250" height="322" alt="mult8 gvim netlist" src="https://github.com/user-attachments/assets/32d2ec04-d95f-4731-b113-9c2c9465a5d2" />
